@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment=" Создание контрллера ошибка создания бина">
+    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment=" Создание контрллера УСТРАНЕНА ошибка создания бина">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/userdata/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/userdata/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/webapp/WEB-INF/views/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/webapp/WEB-INF/views/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,6 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/Евгений/IdeaProjects/PreProd321/SpringDataJPA/src/main/resources",
@@ -87,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662914741272</updated>
-      <workItem from="1662914742743" duration="15684000" />
+      <workItem from="1662914742743" duration="17805000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1662915197245</created>
@@ -124,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662928901910</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=" Создание контрллера УСТРАНЕНА ошибка создания бина">
+      <created>1662930611153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662930611153</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +154,7 @@
     <MESSAGE value=" Создание файла конфигурации PersistenceJPAConfig" />
     <MESSAGE value=" Создание entity User" />
     <MESSAGE value=" Создание контрллера ошибка создания бина" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Создание контрллера ошибка создания бина" />
+    <MESSAGE value=" Создание контрллера УСТРАНЕНА ошибка создания бина" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Создание контрллера УСТРАНЕНА ошибка создания бина" />
   </component>
 </project>
