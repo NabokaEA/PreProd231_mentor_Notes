@@ -1,4 +1,4 @@
-package config;
+package ru.nabokae.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -18,9 +18,8 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("config")
-@ComponentScan("userdata")
-@EnableJpaRepositories(basePackages = {"userdata"})
+@ComponentScan("ru.nabokae")
+@EnableJpaRepositories(basePackages = {"ru.nabokae.userdata"})
 public class PersistenceJPAConfig{
 
     @Bean
@@ -28,7 +27,7 @@ public class PersistenceJPAConfig{
         LocalContainerEntityManagerFactoryBean em
                 = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan(new String[] { "userdata" });
+        em.setPackagesToScan(new String[] {"ru/nabokae/userdata"});
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);

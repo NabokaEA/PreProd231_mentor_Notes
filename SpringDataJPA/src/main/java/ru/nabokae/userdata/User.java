@@ -1,4 +1,4 @@
-package userdata;
+package ru.nabokae.userdata;
 
 import javax.persistence.Id;
 import javax.persistence.Entity;

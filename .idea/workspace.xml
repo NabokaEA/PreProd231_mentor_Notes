@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment=" Создание файла конфигурации PersistenceJPAConfig">
-      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/userdata/User.java" afterDir="false" />
+    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment=" Создание entity User">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/WebInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/userdata/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/userdata/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/webapp/WEB-INF/views/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/webapp/WEB-INF/views/users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/config/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/userdata/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/userdata/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -26,12 +39,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -47,11 +63,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Евгений/IdeaProjects/PreProd321/SpringDataJPA/src/main/resources",
     "settings.editor.selected.configurable": "build.tools"
   },
   "keyToStringList": {
@@ -60,6 +78,17 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Евгений\IdeaProjects\PreProd321\SpringDataJPA\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Евгений\IdeaProjects\PreProd321\SpringDataJPA\src\main\WebApp\WEB-INF\views" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662914741272</updated>
-      <workItem from="1662914742743" duration="8191000" />
+      <workItem from="1662914742743" duration="13563000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1662915197245</created>
@@ -91,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662922396255</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" Создание entity User">
+      <created>1662923028397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662923028397</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +148,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Настройки POM и Database" />
     <MESSAGE value=" Создание файла конфигурации PersistenceJPAConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Создание файла конфигурации PersistenceJPAConfig" />
+    <MESSAGE value=" Создание entity User" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Создание entity User" />
   </component>
 </project>
