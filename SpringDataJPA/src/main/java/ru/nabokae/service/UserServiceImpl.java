@@ -10,8 +10,12 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
-    @Autowired
+
     UserRepository repo;
+    @Autowired
+    public void setRepo(UserRepository repo){
+        this.repo=repo;
+    }
 
     @Transactional
     @Override

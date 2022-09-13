@@ -22,7 +22,6 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 @EnableWebMvc
 @ComponentScan("ru.nabokae.controller")
 @ComponentScan("ru.nabokae.config")
-//@ComponentScan("ru.nabokae.service")
 public class WebConfig implements WebMvcConfigurer {
 
     private ApplicationContext context;
