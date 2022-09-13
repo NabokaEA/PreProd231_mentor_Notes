@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment="Разложил по пакетам стандартной структуры">
-      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment="dao вместо repository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/repositorie/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/DAO/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +38,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -96,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662914741272</updated>
       <workItem from="1662914742743" duration="17805000" />
-      <workItem from="1663065104036" duration="5550000" />
+      <workItem from="1663065104036" duration="7294000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1662915197245</created>
@@ -147,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663081149307</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dao вместо repository">
+      <created>1663084106572</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663084106572</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +177,7 @@
     <MESSAGE value=" Создание контрллера ошибка создания бина" />
     <MESSAGE value=" Создание контрллера УСТРАНЕНА ошибка создания бина" />
     <MESSAGE value="Разложил по пакетам стандартной структуры" />
-    <option name="LAST_COMMIT_MESSAGE" value="Разложил по пакетам стандартной структуры" />
+    <MESSAGE value="dao вместо repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="dao вместо repository" />
   </component>
 </project>

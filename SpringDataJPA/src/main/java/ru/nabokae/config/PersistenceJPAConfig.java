@@ -3,6 +3,8 @@ package ru.nabokae.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -13,6 +15,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.util.Properties;
 
@@ -20,7 +23,11 @@ import java.util.Properties;
 @EnableTransactionManagement
 @ComponentScan("ru.nabokae.*")
 @EnableJpaRepositories(basePackages = {"ru.nabokae.DAO"})
-public class PersistenceJPAConfig{
+@PropertySource("classpath:application.properties")
+public class PersistenceJPAConfig {
+
+    @Resource
+    private Environment environment;
 
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
@@ -37,12 +44,12 @@ public class PersistenceJPAConfig{
     }
 
     @Bean
-    public DataSource dataSource(){
+    public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/usersrepo");
-        dataSource.setUsername( "root" );
-        dataSource.setPassword( "root" );
+        dataSource.setUrl(environment.getRequiredProperty("spring.datasource.url"));
+        dataSource.setDriverClassName(environment.getRequiredProperty("spring.datasource.driver-class-name"));
+        dataSource.setUsername(environment.getRequiredProperty("spring.datasource.username"));
+        dataSource.setPassword(environment.getRequiredProperty("spring.datasource.password"));
         return dataSource;
     }
 
@@ -55,7 +62,7 @@ public class PersistenceJPAConfig{
     }
 
     @Bean
-    public PersistenceExceptionTranslationPostProcessor exceptionTranslation(){
+    public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
