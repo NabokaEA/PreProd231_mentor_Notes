@@ -1,4 +1,4 @@
-package ru.nabokae.repositorie;
+package ru.nabokae.DAO;
 
 import org.springframework.data.repository.CrudRepository;
 import ru.nabokae.entity.User;

@@ -19,7 +19,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan("ru.nabokae.*")
-@EnableJpaRepositories(basePackages = {"ru.nabokae"})
+@EnableJpaRepositories(basePackages = {"ru.nabokae.DAO"})
 public class PersistenceJPAConfig{
 
     @Bean

@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment=" Создание контрллера УСТРАНЕНА ошибка создания бина">
+    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment="Разложил по пакетам стандартной структуры">
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/WebInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/WebInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/userdata/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/userdata/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/repositorie/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/userdata/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/repositorie/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/DAO/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +77,7 @@
       <recent name="C:\Users\Евгений\IdeaProjects\PreProd321\SpringDataJPA\src\main\WebApp\WEB-INF\views" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.nabokae.DAO" />
       <recent name="ru.nabokae.config" />
       <recent name="ru.nabokae.service" />
       <recent name="ru.nabokae.repositorie" />
@@ -98,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662914741272</updated>
       <workItem from="1662914742743" duration="17805000" />
-      <workItem from="1663065104036" duration="3641000" />
+      <workItem from="1663065104036" duration="5550000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1662915197245</created>
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662930611153</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Разложил по пакетам стандартной структуры">
+      <created>1663081149307</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663081149307</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +171,7 @@
     <MESSAGE value=" Создание entity User" />
     <MESSAGE value=" Создание контрллера ошибка создания бина" />
     <MESSAGE value=" Создание контрллера УСТРАНЕНА ошибка создания бина" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Создание контрллера УСТРАНЕНА ошибка создания бина" />
+    <MESSAGE value="Разложил по пакетам стандартной структуры" />
+    <option name="LAST_COMMIT_MESSAGE" value="Разложил по пакетам стандартной структуры" />
   </component>
 </project>

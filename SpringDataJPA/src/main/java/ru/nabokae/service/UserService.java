@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.nabokae.entity.User;
-import ru.nabokae.repositorie.UserRepository;
+import ru.nabokae.DAO.UserRepository;
 
 import java.util.List;
 
