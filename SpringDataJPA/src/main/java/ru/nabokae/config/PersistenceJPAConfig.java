@@ -18,8 +18,8 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("ru.nabokae")
-@EnableJpaRepositories(basePackages = {"ru.nabokae.userdata"})
+@ComponentScan("ru.nabokae.*")
+@EnableJpaRepositories(basePackages = {"ru.nabokae"})
 public class PersistenceJPAConfig{
 
     @Bean
@@ -27,7 +27,7 @@ public class PersistenceJPAConfig{
         LocalContainerEntityManagerFactoryBean em
                 = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("ru/nabokae/userdata");
+        em.setPackagesToScan("ru/nabokae/*");
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);

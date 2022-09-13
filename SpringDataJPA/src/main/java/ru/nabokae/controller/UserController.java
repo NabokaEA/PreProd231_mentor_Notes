@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation .*;
-import ru.nabokae.userdata.User;
-import ru.nabokae.userdata.UserService;
+import ru.nabokae.entity.User;
+import ru.nabokae.service.UserService;
 
 
 @Controller

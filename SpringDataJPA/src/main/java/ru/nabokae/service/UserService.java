@@ -1,8 +1,10 @@
-package ru.nabokae.userdata;
+package ru.nabokae.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ru.nabokae.entity.User;
+import ru.nabokae.repositorie.UserRepository;
 
 import java.util.List;
 
@@ -12,8 +14,8 @@ public class UserService {
     @Autowired
     UserRepository repo;
 
-    public void save(User customer) {
-        repo.save(customer);
+    public void save(User user) {
+        repo.save(user);
     }
 
     public List<User> listAll() {

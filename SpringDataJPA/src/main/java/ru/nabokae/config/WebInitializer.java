@@ -1,4 +1,4 @@
-package ru.nabokae.controller;
+package ru.nabokae.config;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;

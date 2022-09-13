@@ -20,7 +20,7 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("ru.nabokae")
+@ComponentScan("ru.nabokae.*")
 public class WebConfig implements WebMvcConfigurer {
 
     private ApplicationContext context;
