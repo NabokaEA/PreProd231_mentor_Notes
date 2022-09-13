@@ -21,9 +21,11 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("ru.nabokae.*")
+@ComponentScan("ru.nabokae.entity")
+@ComponentScan("ru.nabokae.DAO")
+@ComponentScan("ru.nabokae.service")
 @EnableJpaRepositories(basePackages = {"ru.nabokae.DAO"})
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:db.properties")
 public class PersistenceJPAConfig {
 
     @Resource

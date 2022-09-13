@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment="dao вместо repository">
+    <list default="true" id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment="вынес в настройк датасорс в файл пропертис">
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/DAO/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/DAO/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/PersistenceJPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/java/ru/nabokae/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringDataJPA/src/main/resources/db.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -36,7 +41,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
@@ -86,6 +91,9 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.55026454" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0606611a-635b-4687-b5d1-84b772701647" name="Changes" comment="" />
@@ -94,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662914741272</updated>
       <workItem from="1662914742743" duration="17805000" />
-      <workItem from="1663065104036" duration="7294000" />
+      <workItem from="1663065104036" duration="16304000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1662915197245</created>
@@ -152,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663084106572</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="вынес в настройк датасорс в файл пропертис">
+      <created>1663086293131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663086293131</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +193,7 @@
     <MESSAGE value=" Создание контрллера УСТРАНЕНА ошибка создания бина" />
     <MESSAGE value="Разложил по пакетам стандартной структуры" />
     <MESSAGE value="dao вместо repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="dao вместо repository" />
+    <MESSAGE value="вынес в настройк датасорс в файл пропертис" />
+    <option name="LAST_COMMIT_MESSAGE" value="вынес в настройк датасорс в файл пропертис" />
   </component>
 </project>

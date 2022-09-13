@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation .*;
 import ru.nabokae.entity.User;
 import ru.nabokae.service.UserService;
+import ru.nabokae.service.UserServiceImpl;
 
 
 @Controller
@@ -23,7 +24,7 @@ import ru.nabokae.service.UserService;
         @GetMapping("/all")
         public String ListPage(Model model) {
             logger.info("Запрошен список пользьзовантелей");
-            model.addAttribute("usersAll", userService.listAll());
+            model.addAttribute("usersAll", userService.findAll());
             return "users";
         }
 
@@ -44,7 +45,7 @@ import ru.nabokae.service.UserService;
         @GetMapping("/{id}")
         public String EditUserForm(@PathVariable("id") Long id, Model model) {
             logger.info("Запрошена страница редактирования пользователя");
-            model.addAttribute("user", userService.get(id));
+            model.addAttribute("user", userService.findById(id));
             return "user";
         }
 
