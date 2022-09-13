@@ -11,6 +11,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.HibernateJpaDialect;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -25,7 +26,7 @@ import java.util.Properties;
 @ComponentScan("ru.nabokae.DAO")
 @ComponentScan("ru.nabokae.service")
 @EnableJpaRepositories(basePackages = {"ru.nabokae.DAO"})
-@PropertySource("classpath:db.properties")
+@PropertySource("classpath:application.properties")
 public class PersistenceJPAConfig {
 
     @Resource
@@ -70,8 +71,8 @@ public class PersistenceJPAConfig {
 
     Properties additionalProperties() {
         Properties properties = new Properties();
-        properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        properties.setProperty("hibernate.hbm2ddl.auto",environment.getRequiredProperty("hibernate.hbm2ddl.auto"));
+        properties.setProperty("hibernate.dialect",environment.getRequiredProperty("hibernate.dialect"));
         return properties;
     }
 
